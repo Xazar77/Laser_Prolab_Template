@@ -1,0 +1,702 @@
+.place{
+    height: 700px;
+    margin-top: 30px;
+    overflow: hidden;
+    &__container{
+        max-width: 1870px;
+        margin: 0 auto;
+        position: relative;
+        &::before{
+            content: '';
+            display: block;
+            width: 715px;
+            height: 715px;
+            background-image:  url('../icons/card/logo.png');
+            position: absolute;
+            top: -7%;
+            left: -20%;
+            z-index: -10;
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 582px;
+            height: 582px;
+            background-image:  url('../icons/card/logo2.png');
+            position: absolute;
+            top: 10%;
+            right: -16%;
+            z-index: -10;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__title{
+        font-size: 40px;
+        line-height: 37px;
+    }
+    &__content{
+        &__logo{
+            position: absolute;
+            top: -12%;
+            left: -64%;
+            z-index: -10;
+        }
+        &__location{
+            &_adress{
+                display: block;
+                margin-top: 10px;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 59px;
+            }
+            &_metro{
+                margin-top: 15px;
+                & img{
+                    width: 29px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+                & span{
+                    font-size: 25px;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        &__reviews{
+            margin-top: 50px;
+            &__btns{
+                margin-top: 15px;
+                display: flex;
+                align-items: center;
+            }
+            &_gis,
+            &_yandex{
+                width: 200px;
+                height: 67px;
+                border-radius: 50px;
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+                background: linear-gradient(90.00deg, rgb(255, 211, 0),rgb(236, 167, 4) 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &_gis{
+               margin-right: 80px; 
+            }
+            &_yandex{
+                & span{
+                    font-size: 30px;
+                    line-height: 37px;
+                }
+            }
+        }
+        &__contacts{
+            margin-top: 50px;
+            &_text{
+                display: block;
+                margin-top: 14px;
+                font-size: 25px;
+                line-height: 24px;
+                text-transform: capitalize;
+            }
+            &_tel{
+                font-size: 48px;
+                line-height: 59px;
+            }
+            &__social{
+                margin-top: 20px;
+            }
+            &_wattsap{
+                display: inline-block;
+                margin-right: 17px;
+                & img{
+                    width: 51px;
+                    height: 51px;
+                }
+            }
+            &_telegram{
+                display: inline-block;
+                & img{
+                    width: 47px;
+                    height: 47px;
+                }
+
+            }
+        
+        }
+        &__map{
+            margin-top: 50px;
+            width: 480px;
+            height: 67px;
+            border-radius: 50px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(90.00deg, rgb(255, 222, 92) 2.8%,rgb(236, 167, 4) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            &_link{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & span{
+                    display: block;
+                    margin-left: 16px;
+                    font-size: 30px;
+                    line-height: 37px;
+                }
+            }
+        }
+    }
+
+    &__gallery{
+        &__container{
+            position: relative;
+        }
+
+        &__slider{
+            width: 852px;
+            height: 415px;
+            overflow: hidden;
+            display: flex;
+            &_wrapper{
+                display: flex;
+            }
+            &_item{
+                width: 852px;
+                height: 100%;
+                border-radius: 50px;
+                overflow: hidden;
+                display: flex;
+     
+            }
+            &_img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &__btn{
+                &_prev,
+                &_next{
+                    position: absolute;
+                    width: 68px;
+                    height: 68px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &_prev{
+                    left: 0%;
+
+                }
+                &_next{
+                    right: 0%;
+                }
+            }
+
+        }
+        &__pagination{
+            position: absolute;
+            bottom: -30%;
+            right: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+            transform: rotate(-90deg);
+            & .swiper-pagination-bullet{
+                display: block;
+                margin-bottom: 8px;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                background: rgb(231, 135, 181);
+            }
+            & .swiper-pagination-bullet-active{
+                background: rgb(236, 55, 142);
+            }
+        }
+
+    }
+
+
+}
+@media (max-width:1970px){
+    .place{
+        &__container{
+            width: 90%;
+        }
+    }
+}
+@media (max-width:1870px){
+    .place{
+
+    }
+}
+@media (max-width:1690px){
+    .place{
+        &__container{
+            &::before{
+                content: '';
+                left: -27%;
+            }
+            &::after{
+                content: '';
+                top: 8%;
+                right: -23%;
+            }
+        }
+        &__gallery{
+            &__slider{
+                width: 761px;
+                height: 324px;
+                &_item{
+                    width: 761px;
+                    height: 324px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1600px){
+    .place{
+        height: 1210px;
+        &__container{
+            &::before{
+                content: "";
+                left: -35%;
+            }
+            &::after{
+                content: "";
+                top: 26%;
+                right: -30%;
+            }
+        }
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__gallery{
+            align-self: center;
+            &__slider{
+                width: 846px;
+                height: 360px;
+                margin-top: 75px;
+                &_item{
+                    width: 846px;
+                    height: 360px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1200px){
+    .place{
+        &__container{
+            &::before{
+                content: "";
+                top: -4%;
+                left: -45%;
+            }
+            &::after{
+                content: "";
+                top: 32%;
+                right: -45%;
+            }
+        }
+        &__gallery{
+            &__slider{
+                width: 761px;
+                height: 324px;
+                &_item{
+                    width: 761px;
+                    height: 324px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:900px){
+    .place{
+        height: 870px;
+        &__title{
+            font-size: 22.49px;
+            line-height: 27px;
+        }
+        &__container{
+            &::before{
+                content: "";
+                width: 577px;
+                height: 577px;
+                left: -60%;
+            }
+            &::after{
+                content: "";
+                width: 561px;
+                height: 561px;
+                top: 40%;
+                right: -57%;
+            }
+        }
+        &__content{
+            &__location{
+                &_adress{
+                    font-size: 35.98px;
+                    font-weight: 400;
+                    line-height: 44px;
+                    margin-top: 0;
+                }
+                &_metro{
+                    margin-top: 0;
+                    & img{
+                        width: 21.81px;
+                        height: 15.04px;
+                    }
+                    & span{
+                        font-size: 14.99px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            &__reviews{
+                margin-top: 17px;
+                &_gis,
+                &_yandex{
+                    width: 150px;
+                    height: 50px;
+                }
+                &_gis{
+                    margin-right: 60px;
+                    & img{
+                        width: 85.71px;
+                        height: 27.75px;
+                    }
+                }
+                &_yandex{
+                    & span{
+                        font-size: 22.5px;
+                        line-height: 27px;
+                    }
+                }
+            }
+            &__contacts{
+                margin-top: 17px;
+                &_text{
+                    font-size: 15.01px;
+                    line-height: 18px;
+                }
+                &_tel{
+                    font-size: 36.03px;
+                    line-height: 44px;
+                }
+                &_wattsap{
+                    & img{
+                        width: 42px;
+                        height: auto;
+                    }
+                }
+                &_telegram{
+                    & img{
+                        width: 36px;
+                        height: auto;
+                    }
+                }
+            }
+            &__map{
+                &_link{
+                    width: 360px;
+                    height: 50px;
+                    & span{
+                        font-size: 22.5px;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+        &__gallery{
+            &__slider{
+                width: 507.6px;
+                height: 216px;
+                &_item{
+                    width: 507.6px;
+                    height: 216px;
+                    border-radius: 30px;
+                }
+            }
+            &__pagination{
+                bottom: -50%;
+                & .swiper-pagination-bullet {
+                    display: block;
+                    margin-bottom: 8px;
+                    border-radius: 50%;
+                    width: 15px;
+                    height: 15px;
+                    background: rgb(231, 135, 181);
+                }
+            }
+        }
+    }
+}
+@media (max-width:640px){
+    .place{
+        height: 745px;
+        &__title{
+            font-size: 21.01px;
+            line-height: 26px;
+        }
+        &__container{
+            &::before{
+                content: "";
+                width: 482px;
+                height: 482px;
+                top: -8%;
+                left: -60%;
+            }
+            &::after{
+                content: "";
+                width: 406px;
+                height: 406px;;
+                top: 40%;
+                right: -57%;
+            }
+        }
+        &__content{
+            &__location{
+                &_adress{
+                    font-size: 33.61px;
+                    line-height: 41px;
+                }
+                &_metro{
+                    margin-top: 0;
+                    & img{
+                        width: 20.38px;
+                        height: 14.16px;
+                    }
+                    & span{
+                        font-size: 14px;
+                        line-height: 17px
+                    }
+                }
+            }
+            &__reviews{
+                margin-top: 12px;
+                &_gis,
+                &_yandex{
+                    width: 140px;
+                    height: 48px;
+                }
+                &_gis{
+                    margin-right: 56px;
+                    & img{
+                        width: 80px;
+                        height: 25.9px;
+                    }
+                }
+                &_yandex{
+                    & span{
+                        font-size: 21px;
+                        line-height: 26px;
+                    }
+                }
+            }
+            &__contacts{
+                margin-top: 10px;
+                &_text{
+                    font-size: 14.01px;
+                    line-height: 17px;
+                }
+                &_tel{
+                    font-size: 33.61px;
+                    font-weight: 300;
+                    line-height: 41px;
+                }
+                &__social{
+                    margin-top: 13px;
+                }
+                &_wattsap{
+                    & img{
+                        width: 42px;
+                        height: auto;
+                    }
+                }
+                &_telegram{
+                    & img{
+                        width: 36px;
+                        height: auto;
+                    }
+                }
+            }
+            &__map{
+                width: 335px;
+                height: 48px;
+                margin: 0 auto;
+                margin-top: 28px;
+                &_link{
+                    & span{
+                        font-size: 20.94px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+        &__gallery{
+            &__slider{
+                width: 406px;
+                height: 172.77px;
+                &_item{
+                    width: 406px;
+                    height: 172.77px;
+                    border-radius: 24px;
+                }
+            }
+            &__pagination{
+                bottom: -45%;
+                & .swiper-pagination-bullet {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+
+}
+@media (max-width:475px){
+    .place{
+        height: 511px;
+        &__title{
+            font-size: 12.01px;
+            line-height: 15px;
+        }
+
+        &__content{
+            &__location{
+                &_adress{
+                    font-size: 19.22px;
+                    font-weight: 400;
+                    line-height: 23px;
+                }
+                &_metro{
+                    margin-top: 0;
+                    & img{
+                        width: 11.65px;
+                        height: 7.96px;
+                        margin-right: 4px;
+                    }
+                    & span{
+                        font-size: 8.01px;
+                        line-height: 10px;
+                    }
+                }
+            }
+            &__reviews{
+                margin-top: 10px;
+                &_gis,
+                &_yandex{
+                    width: 80.6px;
+                    height: 27px;
+                }
+                &_gis{
+                    margin-right: 31px;
+                    & img{
+                        width: 46.05px;
+                        height: 14.91px;
+                    }
+                }
+                &_yandex{
+                    & img{
+                        width: 9.9px;
+                        height: 12.47px;
+                    }
+                    & span{
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+            &__contacts{
+                margin-top: 6px;
+                &_text{
+                    font-size: 8.01px;
+                    line-height: 10px;
+                }
+                &_tel{
+                    font-size: 19.22px;
+                    line-height: 23px;
+                }
+                &__social{
+                    margin-top: 6px;
+                }
+                &_wattsap{
+                    margin-right: 7px;
+                    & img{
+                        width: 20px;
+                        height: auto;
+                    }
+                }
+                &_telegram{
+                    & img{
+                        width: 19px;
+                        height: auto;
+                    }
+                }
+            }
+            &__map{
+                width: 192px;
+                height: 27px;
+                margin-top: 16px;
+                &_link{
+                    & img{
+                        width: 9.9px;
+                        height: 12.47px;
+                    }
+                    & span{
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+        &__gallery{
+            &__slider{
+                width: 279px;
+                height: 119px;
+                &_item{
+                    width: 279px;
+                    height: 119px;
+                    border-radius: 17px;
+
+                }
+                &__btn{
+                    &_prev,
+                    &_next{
+                        width: 22.43px;
+                        height: 22.48px;
+                        & img{
+                            width: 100%;
+                        }
+                    }
+                    &_prev{
+                        left: 3%;
+    
+                    }
+                    &_next{
+                        right: 3%;
+                    }
+                }
+            }
+            &__pagination{
+                bottom: -50%;
+                & .swiper-pagination-bullet {
+                    width: 8px;
+                    height: 8px;
+                   
+                }
+            }
+        }
+    }
+
+}
