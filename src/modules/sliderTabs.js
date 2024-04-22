@@ -10,18 +10,12 @@ export const sliderTabs = () => {
                 modules: [Autoplay, Navigation],
                 direction: 'vertical',
                 loop: true,
-                slidesPerView: 'auto',
-                mousewheel:"true",
-                freeMode: "true",
+                slidesPerView: 6,
                 navigation: {
                   nextEl: '.slider__btn_up',
                   prevEl: '.slider__btn_down',
                 },
-              
-                // And if we need scrollbar
-                scrollbar: {
-                  el: '.swiper-scrollbar',
-                },
+
             });
 
 

@@ -15,6 +15,7 @@ export const tabs = () => {
       const {name} = elem
       const a = document.createElement('a')
       a.setAttribute('href', '/')
+      a.setAttribute('target', '_blank')
       a.classList.add('laser__services__complex__list_item')
       a.classList.add('swiper-slide')
       a.textContent = `${name}`
