@@ -37,3 +37,32 @@
     }
 }
 
+@media(max-width: 1600px) {
+    .adress{
+        margin-top: 80px;
+    }
+}
+@media(max-width: 1200px) {
+    .adress{
+        margin-top: 71px;
+        padding: 11px 0;
+    }
+}
+@media(max-width: 900px) {
+    .adress{
+        margin-top: 69px;
+        padding: 10px 0;
+    }
+}
+@media(max-width: 640px) {
+    .adress{
+        margin-top: 72px;
+        padding: 0;
+    }
+}
+@media(max-width: 475px) {
+    .adress{
+        margin-top: 71px;
+        padding: 10px 0;
+    }
+}

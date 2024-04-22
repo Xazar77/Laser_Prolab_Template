@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
-
+import 'swiper/css';
 
 export const placeSlider = () => {
     const swiper = new Swiper('.place__gallery__slider', {

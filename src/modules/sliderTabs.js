@@ -1,6 +1,8 @@
 import { getData } from "./getData";
 import Swiper from 'swiper';
 import { Autoplay, Navigation } from 'swiper/modules';
+import 'swiper/css';
+
 
 export const sliderTabs = () => {
 

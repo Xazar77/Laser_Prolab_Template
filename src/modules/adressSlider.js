@@ -1,5 +1,6 @@
 import { getData } from "./getData";
 import Swiper from 'swiper';
+import { Autoplay } from 'swiper/modules'
 import 'swiper/css';
 
 
@@ -10,13 +11,16 @@ export const adressSlider = () => {
 
 			const swiper = new Swiper(".adress__slider", {
 				direction: 'horizontal',
+				modules: [Autoplay],
 				loopAddBlankSlides: true,
 				slidesPerView: 6,
-				// slidesPerGroup: 1,
-				// slidesPerGroupAuto: true,
 				spaceBetween: 30,
 				loop: true,
-				// loopAddBlankSlides: true
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+					pauseOnMouseEnter: true
+				},	
 
 
 				breakpoints: {
