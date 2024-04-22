@@ -29,15 +29,5 @@ export const adressTabs = () => {
 
 
 
-	// if(JSON.parse(localStorage.getItem('adress'))) {
-	// 	const newArr = JSON.parse(localStorage.getItem('adress'))
-	// 	let interval
-	// 	let count = 0
-	// 	const widthItem = adressWrap.offsetWidth / newArr.length
-
-
-
-	// }
-
 	
 }

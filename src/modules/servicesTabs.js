@@ -8,11 +8,7 @@ export const servicesTabs = () => {
         modules: [Autoplay, Navigation],
         slidesPerView: 5,
         loop: true,
-//   autoplay: {
-// 			delay: 2500,
-// 			disableOnInteraction: false,
-//             pauseOnMouseEnter: true
-// 		},      	
+   	
         navigation: {
             nextEl: ".services__nav__btn_next",
             prevEl: ".services__nav__btn_prev",
