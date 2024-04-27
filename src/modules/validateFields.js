@@ -7,7 +7,8 @@ export const validateFields = () => {
         const validNameField = (selector) => {
             
             const inputName = document.querySelector(selector)
-           
+
+
     
             if( inputName && inputName.value === ''){
                 inputName.addEventListener('focus', () => {
@@ -28,6 +29,16 @@ export const validateFields = () => {
                 inputName.value = inputName.value.replace(/\,/g, '  ')
                 console.log(inputName.value)
             })
+
+            inputName.addEventListener('focus', () => {
+                console.log("error")
+                if(inputName.value === ''){
+                    inputName.style.border = `1px solid red`
+                } else {
+                    inputName.style.border = `1px solid green`
+                }
+            })
+           
            
     
         }
@@ -69,7 +80,7 @@ export const validateFields = () => {
                 
                     if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
                         this.value = new_value;
-                        if(this.value.length < 17) {
+                        if(this.value.length < 16) {
                             input.style.border = '1px solid red'
                             input.classList.remove('success')
                         } else {
@@ -104,11 +115,13 @@ export const validateFields = () => {
             const inputEmail = document.querySelector(selector)
             
     
-            if(inputEmail.value === ''){
+            
                 inputEmail.addEventListener('focus', () => {
-                    inputEmail.style.border = `1px solid red`
+                    if(inputEmail.value === ''){
+                        inputEmail.style.border = `1px solid red`
+                    }
                 })
-            }
+            
     
             inputEmail.addEventListener('input', (e) => {
                 inputEmail.value = e.target.value.replace(/[^a-z0-9\_\ \.\~\*\'@]/gi, '')
