@@ -6,21 +6,29 @@ import 'swiper/css';
 
 export const sliderTabs = () => {
 
-    getData().then(({complex}) => { 
-        if(complex.length > 0) {
-            const swiper = new Swiper('.slider', {
-                modules: [Autoplay, Navigation],
-                direction: 'vertical',
-                loop: true,
-                slidesPerView: 6,
-                navigation: {
-                  nextEl: '.slider__btn_up',
-                  prevEl: '.slider__btn_down',
+      getData().then(({complex}) => { 
+          if(complex) {
+              const swiper = new Swiper('.slider', {
+                  modules: [Autoplay, Navigation],
+                  direction: 'vertical',
+                  loop: true,
+                  slidesPerView: 5,
+                  autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true
                 },
+                  spaceBetween: 10,
+                //   navigation: {
+                //     nextEl: '.slider__btn_up',
+                //     prevEl: '.slider__btn_down',
+                //   },
 
-            });
+              });
 
 
-        }
+          } 
       })
+
+
 }

@@ -13,18 +13,18 @@ export const adressSlider = () => {
 				direction: 'horizontal',
 				modules: [Autoplay],
 				loopAddBlankSlides: true,
-				slidesPerView: 6,
+				slidesPerView: 5,
 				spaceBetween: 30,
 				loop: true,
 				autoplay: {
-					delay: 2500,
+					delay: 3000,
 					disableOnInteraction: false,
 					pauseOnMouseEnter: true
 				},	
 
 
 				breakpoints: {
-					360: {
+					300: {
 						slidesPerView: 1,
 					},
 					500: {
@@ -36,8 +36,8 @@ export const adressSlider = () => {
 					1300: {
 						slidesPerView: 4,
 					},
-					1900: {
-						slidesPerView: 6,
+					1440: {
+						slidesPerView: 5,
 					}
 				}
 

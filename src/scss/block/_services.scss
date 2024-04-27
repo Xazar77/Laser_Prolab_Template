@@ -53,7 +53,7 @@
     }
 
 }
-@media (max-width: 1870px) {
+@media (max-width: 1440px) {
     .services{
         &__nav{
             &__menu{
@@ -78,18 +78,7 @@
         }
     }
 }
-// @media (max-width: 1600px) {
-//     .services{
-//         &__nav{
-//             &__menu{
-//                 &_link{
-//                     font-size: 16px;
-//                     line-height: 20px;
-//                 }
-//             }
-//         }
-//     }
-// }
+
 @media (max-width: 1200px) {
     .services{
         &__nav{

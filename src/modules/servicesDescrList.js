@@ -26,9 +26,15 @@ export const servicesDescrList = () => {
     
     
     
-        getData().then(({servicesDescription}) => { 
-            renderItems(servicesDescription)
-            
+    
+
+      
+        getData().then(({servicesDescription}) => {
+            if(servicesDescription) {
+                renderItems(servicesDescription)
+
+            } 
         })
+ 
     }
     }
