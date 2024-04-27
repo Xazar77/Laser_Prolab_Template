@@ -102,6 +102,14 @@ export const validateFields = () => {
                 input.addEventListener("focus", mask, false);
                 input.addEventListener("blur", mask, false);
                 input.addEventListener("keydown", mask, false);
+
+                input.addEventListener('focus', () => {
+                    if(input.value === ''){
+                        input.style.border = `1px solid red`
+                    } else {
+                        input.style.border = `1px solid green`
+                    }
+                })
             
             });
     
