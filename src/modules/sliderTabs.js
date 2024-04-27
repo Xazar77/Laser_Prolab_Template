@@ -13,11 +13,11 @@ export const sliderTabs = () => {
                   direction: 'vertical',
                   loop: true,
                   slidesPerView: 5,
-                  autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true
-                },
+                //   autoplay: {
+                //     delay: 3000,
+                //     disableOnInteraction: false,
+                //     pauseOnMouseEnter: true
+                // },
                   spaceBetween: 10,
                 //   navigation: {
                 //     nextEl: '.slider__btn_up',

@@ -197,10 +197,7 @@
         &__logo{
             width: 142px;
             height: 53px;
-            // &_img{
-            //     width: 100%;
-            //     height: 100%;
-            // }
+
         }
         &__nav{
             &__menu{
@@ -302,7 +299,6 @@
 
 @media (max-width: 900px){
     .header{
-        // position: relative;
         &__content{
             display: none;
         }

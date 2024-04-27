@@ -1,6 +1,5 @@
 
 .laser{
-    // padding-bottom: 40px;
     &__container{
         display: flex;
         align-items: center;
@@ -102,7 +101,7 @@
                     width: 100%;
                     background: rgba(231, 135, 181, 1);
                     cursor: pointer;
-                    padding: 20px 30px;
+                    padding: 16px 30px;
                     border-radius: 15px;
                     color: #fff;
                     border: none;
@@ -145,7 +144,6 @@
                 margin-top: 10px;
             }
             &__list{
-                // margin-top: 30px;
                 &_item{
                     font-size: 15px;
                     font-weight: 400;
@@ -204,45 +202,9 @@
     }
 
     
-    .active{
 
-        &:nth-child(1){
-            opacity: 1;
-            background: rgba(231, 135, 181, .4);
-            transform: scale(0.8);
-            transition: opacity .2s linear;
-            font-size: 1em;
-        }
-        &:nth-child(2){
-            opacity: 1;
-            background: rgba(231, 135, 181, .7);
-            transform: scale(0.9);
-            transition: opacity .4s linear;
-            font-size: 1em;
-        }
-        &:nth-child(3){
-            opacity: 1;
-            background: rgba(231, 135, 181, 1);
-            transform: scale(1);
-            transition: opacity .2s linear;
-            font-size: 1.5em;
-        }
-        &:nth-child(4){
-            opacity: 1;
-            background: rgba(231, 135, 181, .7);
-            transform: scale(0.9);
-            transition: opacity .4s linear;
-            font-size: 1em;
-        }
-        &:nth-child(5){
-            opacity: 1;
-            background: rgba(231, 135, 181, .4);
-            transform: scale(0.8);
-            transition: opacity .6s linear;
-            font-size: 1em;
-        }
-    }
     
+      
 
 
     &__order{
@@ -275,7 +237,6 @@
             
         }
         &__choice{
-            // margin-right: 25px;
             &__studios,
             &__count{
                 width: 400px;
@@ -366,11 +327,6 @@
             &__descr{
                 &_title{
                     font-size: 13px;
-                }
-                &__list{
-                    &_item{
-                        // font-size: 13px;
-                    }
                 }
                 &_optionally{
                     font-size: 13px;
@@ -470,7 +426,6 @@
     .laser{
         &__title{
             font-size: 25px;
-            // text-align: center;
         }
 
         &__services{
@@ -510,10 +465,7 @@
                 }
             }
         }
-        // .active{
-        //     opacity: 1;
-        //     font-size: .95em;
-        // }
+
     }
 }
 
@@ -607,16 +559,21 @@
             &__descr{
 
                 &_title{
-                    font-size: 16px;
-                    margin-right: 30px;
+                    width: 40%;
+                    font-size: 14px;
+                    margin-right: 25px;
                 }
                 &_menu{
                     margin-top: 20px;
                 }
                 &__list{
                     &_item{
-                        font-size: 16px;
+                        font-size: 14px;
                     }
+                }
+                &_optionally{
+                    
+                    font-size: 14px;
                 }
        
             }
@@ -673,6 +630,7 @@
                 &__list{
                     &_item{
                         font-size: 15px;
+                        padding: 20px 30px;
                     }
                 }
 
@@ -688,6 +646,7 @@
                     justify-content: center;
                 }
                 &_title{
+                    width: 60%;
                     margin-right: 0;
                     margin-bottom: 10px;
                 }
