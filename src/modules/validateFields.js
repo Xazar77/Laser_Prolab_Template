@@ -106,9 +106,7 @@ export const validateFields = () => {
                 input.addEventListener('focus', () => {
                     if(input.value.length < 16){
                         input.style.border = `1px solid red`
-                    } else {
-                        input.style.border = `1px solid green`
-                    }
+                    } 
                 })
             
             });
