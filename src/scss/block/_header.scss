@@ -115,6 +115,7 @@
             width: 266px;
             height: 50px;
             cursor: pointer;
+            color:#000;
             font-size: 20px;
             font-weight: 300;
             line-height: 24px;  
@@ -124,6 +125,7 @@
             margin-right: 25px;
             &_select{
                 @include bg_btn;
+                color:#000;
                 outline: none;
                 width: inherit;
                 height: inherit;
