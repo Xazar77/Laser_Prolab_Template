@@ -133,20 +133,13 @@
                    
                 }
                 &_select{
-                    width: 239.4px;
-                    height: 45px;
-                    font-size: 20px;
-                    font-weight: 300;
-                    line-height: 24px;
+                    @include bg_btn;
                     color:#000;
                     outline: none;
-                    border-radius: 50px;
-                    border: none;
-                    text-align: center;
-                    background: linear-gradient(90.00deg, rgba(56, 112, 255, 0.5) 2.8%,rgb(248, 169, 177) 100%);
+                    width: inherit;
+                    height: inherit;
                     appearance: none;
-                    padding: 11px 15px;
-                    // position: relative;
+                    padding: 10px 15px;
                 }
             }
         }
