@@ -47,4 +47,16 @@ export const openHeaderModal = () => {
 
     closeBtn.addEventListener('click', closeModel)
 
+    document.addEventListener('click', (e) => {
+        if(e.target.closest('.header__overlay')) {
+            closeModel()
+        }
+    })
+
+    document.addEventListener('keydown', (e) => {
+        if(e.keyCode === 27) {
+            closeModel()
+        }
+    })
+
 }
