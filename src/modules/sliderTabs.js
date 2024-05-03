@@ -11,8 +11,10 @@ export const sliderTabs = () => {
               const swiper = new Swiper('.slider', {
                   modules: [Autoplay, Navigation],
                   direction: 'vertical',
-                  // loop: true,
+                  loop: true,
                   slidesPerView: 5,
+                  observer: true,
+                  observeParents: true,
                   autoplay: {
                     delay: 3000,
                     disableOnInteraction: false,

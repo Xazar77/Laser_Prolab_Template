@@ -96,6 +96,7 @@
                 align-items: center;
                 flex-direction: column;
                 transition: all .3s linear;
+                height: auto !important;
                 &_item{
                     max-width: 350px;
                     width: 100%;
