@@ -381,7 +381,7 @@
                 }
      
                 &__list{
-                    &_item{
+                    &_link{
                         font-size: 20px;
                     }
                 }
@@ -442,7 +442,10 @@
                 &__list{
                     &_item{
                         width: 300px;
+                    }
+                    &_link{
                         font-size: 16px;
+
                     }
                 }
             }
@@ -508,7 +511,7 @@
                 }
 
                 &__list{
-                    &_item{
+                    &_link{
                         font-size: 15px;
                     }
                 }
@@ -573,7 +576,7 @@
                     margin-top: 20px;
                 }
                 &__list{
-                    &_item{
+                    &_link{
                         font-size: 14px;
                     }
                 }
@@ -635,9 +638,9 @@
                 }
                 &__list{
                     &_item{
-                        font-size: 15px;
                         padding: 20px 30px;
                     }
+
                 }
 
             }

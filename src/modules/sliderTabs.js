@@ -13,8 +13,6 @@ export const sliderTabs = () => {
                   direction: 'vertical',
                   loop: true,
                   slidesPerView: 5,
-                  observer: true,
-                  observeParents: true,
                   autoplay: {
                     delay: 3000,
                     disableOnInteraction: false,
