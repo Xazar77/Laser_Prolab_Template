@@ -10,7 +10,7 @@ export const hoverBtns = (selector) => {
         btn.addEventListener('click', () => {
             btn.style.backgroundColor= 'rgba(0,0,0, .2)';
             setTimeout(() => {
-                btn.style.backgroundColor= '#fff'
+                btn.style.backgroundColor= 'transparent'
             },200)
         })
     })
