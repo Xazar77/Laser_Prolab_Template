@@ -15,6 +15,7 @@ import { adressSlider } from './modules/adressSlider'
 import { optionallyText } from './modules/optionallyText'
 import { servicesDescrList } from './modules/servicesDescrList'
 import { placeImages } from './modules/placeImages'
+import { hoverBtns } from './modules/hoverBtns'
 
 
 if(document.querySelector('.laser')) {
@@ -38,5 +39,6 @@ adressSlider()
 optionallyText()
 servicesDescrList()
 placeImages()
+hoverBtns('.services__nav__btn')
 
 

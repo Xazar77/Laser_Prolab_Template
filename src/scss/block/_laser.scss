@@ -259,7 +259,9 @@
                     z-index: 9;
                     pointer-events: none;
                     transform: translateY(-50%);
+                    border-radius: 50%;
                     background: url('../icons/arrow_down.svg') center center/cover no-repeat;
+
                 } 
             }
             &__studios{

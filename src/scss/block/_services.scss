@@ -104,8 +104,12 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 15px;
-                height: 10px;
+                width: 50px;
+                height: 45px;
+                border-radius: 50%;
+                // &:hover{
+                //     background-color: rgba(0,0,0, .2);
+                // }
                 &_prev{
                     width: 100%;
                     transform: rotate(90deg);
@@ -113,6 +117,11 @@
                 &_next{
                     width: 100%;
                     transform: rotate(-90deg);
+                }
+                &_prev,
+                &_next{
+                    width: 15px;
+                    height: 10px;
                 }
             }
             &__menu{
