@@ -14,6 +14,7 @@ import { sliderTabs } from './modules/sliderTabs'
 import { adressSlider } from './modules/adressSlider'
 import { optionallyText } from './modules/optionallyText'
 import { servicesDescrList } from './modules/servicesDescrList'
+import { placeImages } from './modules/placeImages'
 
 
 if(document.querySelector('.laser')) {
@@ -36,5 +37,6 @@ sliderTabs()
 adressSlider()
 optionallyText()
 servicesDescrList()
+placeImages()
 
 

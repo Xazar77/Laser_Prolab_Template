@@ -103,56 +103,76 @@
         <div class="container">
             <div class="place__wrapper">
                 <div class="place__content">
-                    <div class="place__content__location">
-                        <h2 class="place__title">Студия по адресу:</h2>
-                        <span class="place__content__location_adress">ул. Новолитовская д.10</span>
-                        <div class="place__content__location_metro">
-                            <img src="./icons/card/metro.svg" alt="Иконка метро">
-                            <span>Гражданский проспект</span>
+                    <div class="place__content_block1">
+                        <div class="place__content__location">
+                            <h2 class="place__title">Студия по адресу:</h2>
+                            <span class="place__content__location_adress">ул. Новолитовская д.10</span>
+                            <div class="place__content__location_metro">
+                                <img src="./icons/card/metro.svg" alt="Иконка метро">
+                                <span>Гражданский проспект</span>
+                            </div>
+                        </div>
+                        <div class="place__content__reviews">
+                            <h2 class="place__title">Оставить отзыв о филиале:</h2>
+                            <div class="place__content__reviews__btns">
+                                <a href="#" class="place__content__reviews_gis">
+                                    <img src="./icons/card/2GIS_logo.png" alt="Логотип 2 гис">
+                                </a>
+                                <a href="#" class="place__content__reviews_yandex">
+                                   <img src="./icons/card/Yandex_Maps.svg" alt="Иконка локации">
+                                   <span>Яндекс</span> 
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="place__content__reviews">
-                        <h2 class="place__title">Оставить отзыв о филиале:</h2>
-                        <div class="place__content__reviews__btns">
-                            <a href="#" class="place__content__reviews_gis">
-                                <img src="./icons/card/2GIS_logo.png" alt="Логотип 2 гис">
-                            </a>
-                            <a href="#" class="place__content__reviews_yandex">
-                               <img src="./icons/card/Yandex_Maps.svg" alt="Иконка локации">
-                               <span>Яндекс</span> 
+                    <div class="place__content_block2">
+                        <div class="place__content__contacts">
+                            <h2 class="place__title">Контакты:</h2>
+                            <span class="place__content__contacts_text">Администратор</span>
+                            <a href="tel:+79313971357" class="place__content__contacts_tel">+7 (931) 397-13-57</a>
+                            <div class="place__content__contacts__social">
+                                <a href="#" class="place__content__contacts_wattsap">
+                                    <img src="./icons/card/whatsapp.svg" alt="Логотип ватцапа">
+                                </a>
+                                <a href="#" class="place__content__contacts_telegram">
+                                    <img src="./icons/card/telegram.png" alt="Логотип телеграмм">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="place__content__map">
+                            <a href="#" class="place__content__map_link">
+                                <img src="./icons/card/Yandex_Maps.svg" alt="Иконка локации">
+                                <span>Открыть в Яндекс Картах</span> 
                             </a>
                         </div>
-                    </div>
-                    <div class="place__content__contacts">
-                        <h2 class="place__title">Контакты:</h2>
-                        <span class="place__content__contacts_text">Администратор</span>
-                        <a href="tel:+79313971357" class="place__content__contacts_tel">+7 (931) 397-13-57</a>
-                        <div class="place__content__contacts__social">
-                            <a href="#" class="place__content__contacts_wattsap">
-                                <img src="./icons/card/whatsapp.svg" alt="Логотип ватцапа">
-                            </a>
-                            <a href="#" class="place__content__contacts_telegram">
-                                <img src="./icons/card/telegram.png" alt="Логотип телеграмм">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="place__content__map">
-                        <a href="#" class="place__content__map_link">
-                            <img src="./icons/card/Yandex_Maps.svg" alt="Иконка локации">
-                            <span>Открыть в Яндекс Картах</span> 
-                        </a>
+
                     </div>
                 </div>
-                <div class="place__gallery">
+                <div class="place__gallery" id="gallery">
                     <div class="place__gallery__container">
                         <div class="place__gallery__slider">
-                            <div class="place__gallery__slider_wrapper swiper-wrapper">
-                                <div class="place__gallery__slider_item swiper-slide"><img src="./image/studios/1.jpg" alt="Фотография студии" class="place__gallery__slider_img"></div>
-                                <div class="place__gallery__slider_item swiper-slide"><img src="./image/studios/2.jpg" alt="Фотография студии" class="place__gallery__slider_img"></div>
-                                <div class="place__gallery__slider_item swiper-slide"><img src="./image/studios/3.jpg" alt="Фотография студии" class="place__gallery__slider_img"></div>
-                                <div class="place__gallery__slider_item swiper-slide"><img src="./image/studios/4.jpg" alt="Фотография студии" class="place__gallery__slider_img"></div>
-                                <div class="place__gallery__slider_item swiper-slide"><img src="./image/studios/5.jpg" alt="Фотография студии" class="place__gallery__slider_img"></div>                   
-                            </div>
+                            <ul  class="place__gallery__slider_wrapper swiper-wrapper">
+                                <li class="place__gallery__slider_item swiper-slide">
+                                    <img src="./image/studios/1.jpg" alt="Фотография студии" class="place__gallery__slider_img">
+                                    
+                                </li>
+                                <li class="place__gallery__slider_item swiper-slide">
+                                    <img src="./image/studios/2.jpg" alt="Фотография студии" class="place__gallery__slider_img">
+                                    
+                                </li>
+                                <li class="place__gallery__slider_item swiper-slide">
+                                    <img src="./image/studios/3.jpg" alt="Фотография студии" class="place__gallery__slider_img">
+                                    
+                                </li>
+                                <li class="place__gallery__slider_item swiper-slide">
+                                    <img src="./image/studios/4.jpg" alt="Фотография студии" class="place__gallery__slider_img">
+                                    
+                                </li>
+                                <li class="place__gallery__slider_item swiper-slide">
+                                    <img src="./image/studios/5.jpg" alt="Фотография студии" class="place__gallery__slider_img">
+                                    
+                                </li>                   
+                            </ul>
                             <div class="place__gallery__slider__btn_prev">
                                 <img src="./icons/card/prev.png" alt="Стрелка влево">
                             </div>
@@ -161,7 +181,7 @@
                             </div>
                             
                         </div>
-                        <div class="place__gallery__pagination"></div>
+                        <!-- <div class="place__gallery__pagination"></div> -->
                     </div>
                 </div>
             </div>
@@ -291,6 +311,8 @@
 
        
     </footer>
+
+    <div class="header__overlay"></div>
 
     <div class="modal__header">
         <div class="modal__header__wrap">

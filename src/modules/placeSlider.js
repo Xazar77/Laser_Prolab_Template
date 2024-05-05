@@ -10,7 +10,7 @@ export const placeSlider = () => {
         centeredSlides: true,
 		loop: true,
 		autoplay: {
-			delay: 2500,
+			delay: 3000,
 			disableOnInteraction: false,
             pauseOnMouseEnter: true
 		},	
@@ -18,10 +18,10 @@ export const placeSlider = () => {
             nextEl: ".place__gallery__slider__btn_next",
             prevEl: ".place__gallery__slider__btn_prev",
         },
-        pagination: {
-            el: ".place__gallery__pagination",
-            clickable: true,
-        },
+        // pagination: {
+        //     el: ".place__gallery__pagination",
+        //     clickable: true,
+        // },
 
 	})
 
