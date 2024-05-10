@@ -1,34 +1,22 @@
 
 
-export const hoverBtns = (selector) => {
+export const hoverBtns = (selector, color1, color2, color3) => {
     
     const btns = document.querySelectorAll(selector)
     
     
-    
     btns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            btn.style.backgroundColor= 'rgba(0,0,0, .2)';
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            btn.style.background= color1
+            if(e.target.textContent) btn.style.color= color3
             setTimeout(() => {
-                btn.style.backgroundColor= 'transparent'
+                btn.style.background= color2
+                if(e.target.textContent) btn.style.color= color1
             },200)
         })
     })
 
 
-    const hoverBtnsSlider = (selector1, selector2) => {
-        const btn = document.querySelector(selector1)
-        const btnColor = document.querySelector(selector2)
-        btn.addEventListener('click', () => {
-            btn.style.backgroundColor= 'rgba(0,0,0, 1)'
-            btnColor.style.cssText = `fill: #ffffff`;
-            setTimeout(() => {
-                btn.style.backgroundColor= 'transparent'
-                btnColor.style.cssText = `fill: #000000`;
-            },200)
-    
-        })
-    }
-    hoverBtnsSlider('.place__gallery__slider__btn_next', '.place__gallery__slider__btn_color_next')
-    hoverBtnsSlider('.place__gallery__slider__btn_prev', '.place__gallery__slider__btn_color_prev')
+
 }
