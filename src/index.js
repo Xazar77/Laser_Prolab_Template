@@ -55,6 +55,9 @@ hoverColorTextBtns('.footer__btns_record', '#ffffff', '#000000')
 hoverBgBtns('.footer__btns_online', 'rgb(191 56 121)', 'linear-gradient(90deg, rgba(56, 112, 255, 0.5) 2.8%, rgb(248, 169, 177) 100%)')
 hoverColorTextBtns('.footer__btns_online', '#ffffff', '#000000')
 
+hoverBgBtns('.modal__header__contact__record', 'rgb(191 56 121)', 'linear-gradient(90deg, rgb(231, 135, 181) 2.8%, rgb(248, 169, 177) 100%)')
+hoverColorTextBtns('.modal__header__contact__record', '#ffffff', '#000000')
+
 
 hoverBtnsSvg({
     btnSelector: '.footer__social__item_laser',
