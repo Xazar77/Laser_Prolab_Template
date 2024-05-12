@@ -1,5 +1,6 @@
+
 import Swiper from 'swiper';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 export const servicesNameTabsSlider = () => {

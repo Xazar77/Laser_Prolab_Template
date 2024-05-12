@@ -1,4 +1,5 @@
-import { getData } from "./getData"
+import { getData } from './getData';
+
 import { hoverBgBtns } from './helpers'
 import { hoverColorTextBtns } from './helpers'
 
@@ -38,13 +39,10 @@ export const renderServicesDescrList = () => {
         hoverBgBtns('.laser__order__price_instalment', 'rgb(191 56 121)', 'linear-gradient(90deg, rgba(56, 112, 255, 0.5) 2.8%, rgb(248, 169, 177) 100%)')
         hoverColorTextBtns('.laser__order__price_instalment', '#ffffff', '#000000')
       
+         getData().then(({servicesDescription}) => {
+            renderItems(servicesDescription)
+         })
 
-        getData().then(({servicesDescription}) => {
-            if(servicesDescription) {
-                renderItems(servicesDescription)
-
-            } 
-        })
  
     }
 }

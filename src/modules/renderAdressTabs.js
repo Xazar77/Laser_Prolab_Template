@@ -1,7 +1,5 @@
 
-import { getData } from './getData'
-import { hoverBgBtns } from './helpers'
-import { hoverColorTextBtns } from './helpers'
+import { getData } from './getData';
 
 export const renderAdressTabs = () => {
 	const adressWrap = document.querySelector('.adress__slider_wrapper')

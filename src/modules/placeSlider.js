@@ -1,10 +1,11 @@
+
 import Swiper from 'swiper';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 export const placeSlider = () => {
     const swiper = new Swiper('.place__gallery__slider', {
-		modules: [Autoplay, Navigation, Pagination],
+		modules: [Autoplay, Navigation],
 		slidesPerView: 1,
         spaceBetween: 30,
         centeredSlides: true,

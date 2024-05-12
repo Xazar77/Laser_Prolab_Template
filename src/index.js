@@ -5,10 +5,10 @@ import './scss/style.scss'
 
 
 import { validateFields } from './modules/validateFields' 
-import { renderComplexTabs } from './modules/renderComplexTabs'
+// import { renderComplexTabs } from './modules/renderComplexTabs'
 import { placeSlider } from './modules/placeSlider'
 import { servicesNameTabsSlider } from './modules/servicesNameTabsSlider'
-import { renderAdressTabs } from './modules/renderAdressTabs'
+// import { renderAdressTabs } from './modules/renderAdressTabs'
 import { openHeaderModal } from './modules/openHeaderModal'
 import { complexTabsSlider } from './modules/complexTabsSlider'
 import { adressSlider } from './modules/adressSlider'
@@ -21,10 +21,10 @@ import { hoverColorTextBtns } from './modules/helpers'
 
 
 
-if(document.querySelector('.laser')) {
+// if(document.querySelector('.laser')) {
 
-    renderComplexTabs()
-}
+//     // renderComplexTabs()
+// }
 
 
 
@@ -35,7 +35,7 @@ validateFields()
 
 placeSlider()
 servicesNameTabsSlider()
-renderAdressTabs()
+// renderAdressTabs()
 openHeaderModal()
 complexTabsSlider()
 adressSlider()

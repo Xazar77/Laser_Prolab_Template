@@ -1,8 +1,9 @@
-import { getData } from "./getData";
+
 import Swiper from 'swiper';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
+import { getData } from './getData';
 
 export const complexTabsSlider = () => {
 
