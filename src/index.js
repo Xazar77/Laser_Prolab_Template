@@ -5,24 +5,25 @@ import './scss/style.scss'
 
 
 import { validateFields } from './modules/validateFields' 
-import { tabs } from './modules/tabs'
+import { renderComplexTabs } from './modules/renderComplexTabs'
 import { placeSlider } from './modules/placeSlider'
-import { servicesTabs } from './modules/servicesTabs'
-import { adressTabs } from './modules/adressTabs'
+import { servicesNameTabsSlider } from './modules/servicesNameTabsSlider'
+import { renderAdressTabs } from './modules/renderAdressTabs'
 import { openHeaderModal } from './modules/openHeaderModal'
-import { sliderTabs } from './modules/sliderTabs'
+import { complexTabsSlider } from './modules/complexTabsSlider'
 import { adressSlider } from './modules/adressSlider'
 import { optionallyText } from './modules/optionallyText'
-import { servicesDescrList } from './modules/servicesDescrList'
-import { placeImages } from './modules/placeImages'
-import { hoverBtns } from './modules/hoverBtns'
-import { hoverBtnsSvg } from './modules/hoverBtnsSvg'
+import { renderServicesDescrList } from './modules/renderServicesDescrList'
+import { placeImagesChangeContainer } from './modules/placeImagesChangeContainer'
+import { hoverBgBtns } from './modules/helpers'
+import { hoverBtnsSvg } from './modules/helpers'
+import { hoverColorTextBtns } from './modules/helpers'
 
 
 
 if(document.querySelector('.laser')) {
 
-    tabs()
+    renderComplexTabs()
 }
 
 
@@ -33,56 +34,27 @@ if(document.querySelector('.laser')) {
 validateFields()
 
 placeSlider()
-servicesTabs()
-adressTabs()
+servicesNameTabsSlider()
+renderAdressTabs()
 openHeaderModal()
-sliderTabs()
+complexTabsSlider()
 adressSlider()
 optionallyText()
-servicesDescrList()
-placeImages()
-hoverBtns('.services__nav__btn', 'rgba(0,0,0, .2)', 'transparent')
-hoverBtns('.laser__services__descr_more', 'rgb(139, 139, 139)', 'transparent', '#ffffff')
-hoverBtns('.adress__slider_item', 'rgb(139, 139, 139)', 'transparent', '#ffffff')
+renderServicesDescrList()
+placeImagesChangeContainer()
+// hoverBgBtns('.services__nav__btn', 'rgba(0,0,0, .2)', 'transparent')
+// hoverBgBtns('.laser__services__descr_more', 'rgb(139, 139, 139)', 'transparent')
 
-if(document.getElementById('place')) {
-    hoverBtns('.place__content__btn','rgb(230, 160, 4)', 'linear-gradient(90.00deg, rgb(255, 211, 0),rgb(236, 167, 4) 100%)',  '#000000')
-    hoverBtnsSvg({
-        btnSelector: '.place__gallery__slider__btn_next',
-        iconSelector: '.slider-icon-next',
-        btnColorBefore: 'rgba(0,0,0, 1)',
-        btnColorAfter: 'transparent',
-        iconColorBefore: `fill: #ffffff`,
-        iconColorAfter: `fill: #000000`
-    })
-    hoverBtnsSvg({
-        btnSelector: '.place__gallery__slider__btn_prev',
-        iconSelector: '.slider-icon-prev',
-        btnColorBefore: 'rgba(0,0,0, 1)',
-        btnColorAfter: 'transparent',
-        iconColorBefore: `fill: #ffffff`,
-        iconColorAfter: `fill: #000000`
-    })
-    
-    hoverBtnsSvg({
-        btnSelector: '.place__content__contacts_wattsap',
-        iconSelector: '.social-icon-wattsap',
-        btnColorBefore: '#099A29',
-        btnColorAfter: 'transparent',
-        iconColorBefore: `fill: #ffffff`,
-        iconColorAfter: `fill: #099A29`
-    })
-    
-    hoverBtnsSvg({
-        btnSelector: '.place__content__contacts_telegram',
-        iconSelector: '.social-icon-telegram',
-        btnColorBefore: "#139BD0",
-        btnColorAfter: 'transparent',
-        iconColorBefore: `fill: #73787a`,
-        iconColorAfter: 'fill:#139BD0'
-    })
 
-}
+hoverBgBtns('.header__contact__record', 'rgb(191 56 121)', 'linear-gradient(90deg, rgb(231, 135, 181) 2.8%, rgb(248, 169, 177) 100%)')
+hoverColorTextBtns('.header__contact__record', '#ffffff', '#000000')
+
+hoverBgBtns('.footer__btns_record', 'rgb(191 56 121)', 'linear-gradient(90deg, rgb(231, 135, 181) 2.8%, rgb(248, 169, 177) 100%)')
+hoverColorTextBtns('.footer__btns_record', '#ffffff', '#000000')
+
+hoverBgBtns('.footer__btns_online', 'rgb(191 56 121)', 'linear-gradient(90deg, rgba(56, 112, 255, 0.5) 2.8%, rgb(248, 169, 177) 100%)')
+hoverColorTextBtns('.footer__btns_online', '#ffffff', '#000000')
+
 
 hoverBtnsSvg({
     btnSelector: '.footer__social__item_laser',
@@ -119,5 +91,10 @@ hoverBtnsSvg({
     iconColorBefore: `fill: #ffffff`,
     iconColorAfter: 'fill:#F8A9B1'
 })
+
+
+
+
+
 
 

@@ -1,7 +1,9 @@
 
 import { getData } from './getData'
+import { hoverBgBtns } from './helpers'
+import { hoverColorTextBtns } from './helpers'
 
-export const adressTabs = () => {
+export const renderAdressTabs = () => {
 	const adressWrap = document.querySelector('.adress__slider_wrapper')
 
 	
@@ -14,6 +16,8 @@ export const adressTabs = () => {
 			<div class="adress__slider_item swiper-slide"><a href="cardpage.html" class="adress__slider_link">${adress}</a></div>
 			`)			
 		})
+		// hoverBgBtns('.adress__slider_item', 'rgb(139, 139, 139)', 'transparent')
+		// hoverColorTextBtns('.adress__slider_link', '#ffffff', 'rgb(139, 139, 139)')
 	}
 
 

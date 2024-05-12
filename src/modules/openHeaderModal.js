@@ -1,4 +1,4 @@
-import { animate } from "./animate"
+import { animate } from "./helpers"
 
 export const openHeaderModal = () => {
     const menuBtn = document.querySelector('.header__burger')

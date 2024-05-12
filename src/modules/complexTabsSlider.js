@@ -4,7 +4,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 
-export const sliderTabs = () => {
+export const complexTabsSlider = () => {
 
       getData().then(({complex}) => { 
           if(complex) {

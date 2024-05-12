@@ -1,6 +1,8 @@
 import { getData } from "./getData"
+import { hoverBgBtns } from './helpers'
+import { hoverColorTextBtns } from './helpers'
 
-export const servicesDescrList = () => {
+export const renderServicesDescrList = () => {
     const servicesBlock = document.querySelector('.laser__services__descr__list')
     if(servicesBlock) {
 
@@ -24,11 +26,19 @@ export const servicesDescrList = () => {
             })
         }
     
-    
-    
-    
+        hoverBgBtns('.services__nav__btn', 'rgba(0,0,0, .2)', 'transparent')
 
+        
+        hoverBgBtns('.laser__services__descr_more', 'rgb(139, 139, 139)', 'transparent')
+        hoverColorTextBtns('.laser__services__descr_more', '#ffffff', 'rgb(139, 139, 139)')
+
+        hoverBgBtns('.laser__order__price_buy', 'rgb(191 56 121)', 'linear-gradient(90deg, rgb(231, 135, 181) 2.8%, rgb(248, 169, 177) 100%)')
+        hoverColorTextBtns('.laser__order__price_buy', '#ffffff', '#000000')
+
+        hoverBgBtns('.laser__order__price_instalment', 'rgb(191 56 121)', 'linear-gradient(90deg, rgba(56, 112, 255, 0.5) 2.8%, rgb(248, 169, 177) 100%)')
+        hoverColorTextBtns('.laser__order__price_instalment', '#ffffff', '#000000')
       
+
         getData().then(({servicesDescription}) => {
             if(servicesDescription) {
                 renderItems(servicesDescription)
@@ -37,4 +47,4 @@ export const servicesDescrList = () => {
         })
  
     }
-    }
+}

@@ -1,7 +1,7 @@
 import { getData } from "./getData";
+import { hoverBgBtns } from './helpers'
 
-
-export const tabs = () => {
+export const renderComplexTabs = () => {
   const tabsBlock = document.querySelector(".laser__services__complex_content");
   const sliderLine = tabsBlock.querySelector(".laser__services__complex__list");
 
@@ -27,6 +27,8 @@ export const tabs = () => {
       `)
 
     })
+    
+    hoverBgBtns('.laser__services__complex__list_item', 'rgb(213 92 150)', 'rgb(231, 135, 181)')
     
     
   }
